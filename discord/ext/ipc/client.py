@@ -76,8 +76,12 @@ class Client:
 
             port_data = recv.json()
             self.port = port_data["port"]
-
-        self.websocket = await self.session.ws_connect(self.url, autoping=False, autoclose=False)
+        
+        try:
+            self.websocket = await self.session.ws_connect(self.url, autoping=False, autoclose=False)
+        except Exception as e:
+            raise(e)
+            
         log.info("Client connected to %s", self.url)
 
         return self.websocket
