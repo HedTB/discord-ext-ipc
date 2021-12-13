@@ -1,1 +1,1 @@
-disnake
+git+git://github.com/DisnakeDev/disnake
