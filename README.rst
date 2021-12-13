@@ -1,6 +1,6 @@
 .. raw :: html
 
-    <h1 align="center">As of the 28th August 2021 discord-ext-ipc is no-longer maintained.</h1>
+    <h1 align="center">disnake-ext-ipc</h1>
     <br>
 
 .. raw:: html
@@ -31,9 +31,8 @@
 
 .. raw:: html
 
-    <h1 align="center">discord-ext-ipc</h1>
-    <p align="center">A discord.py extension for inter-process communication.</p>
-    <h6 align="center">Copyright 2020-present Ext-Creators</h6>
+    <p align="center">A fork of the discontinued project, discord-ext-ipc, made for inter-process communication with disnake.</p>
+    <h6 align="center">Copyright 2021-present Ext-Creators</h6>
 
 
 Installation
@@ -43,7 +42,7 @@ Installation
 
 .. code-block:: sh
 
-    pip install --upgrade discord-ext-ipc
+    pip install --upgrade disnake-ext-ipc
 
 
 See Also
