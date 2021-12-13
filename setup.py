@@ -40,7 +40,7 @@ with open("requirements.txt") as stream:
     install_requires = stream.read().splitlines()
 
 packages = [
-    "disnake.ext.ipc",
+    "disnake",
 ]
 
 project_urls = {
