@@ -1,4 +1,4 @@
-from discord.ext import commands, ipc
+from disnake.ext import commands, ipc
 
 
 class IpcRoutes(commands.Cog):
