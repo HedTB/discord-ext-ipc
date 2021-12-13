@@ -1,1 +1,1 @@
-git+git://github.com/DisnakeDev/disnake
+disnake>=2.2.2
