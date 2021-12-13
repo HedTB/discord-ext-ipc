@@ -1,4 +1,4 @@
-from discord import DiscordException
+from disnake import DiscordException
 
 
 class IPCError(DiscordException):

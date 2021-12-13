@@ -1,4 +1,4 @@
-Welcome to discord-ext-ipc's documentation!
+Welcome to disnake-ext-ipc's documentation!
 ===========================================
 
 .. toctree::

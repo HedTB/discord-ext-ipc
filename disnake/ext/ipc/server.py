@@ -1,7 +1,7 @@
 import logging
 
 import aiohttp.web
-from discord.ext.ipc.errors import *
+from disnake.ext.ipc.errors import *
 
 log = logging.getLogger(__name__)
 
@@ -55,7 +55,7 @@ class Server:
 
     Attributes
     ----------
-    bot: :class:`~discord.ext.commands.Bot`
+    bot: :class:`~disnake.ext.commands.Bot`
         Your bot instance
     host: str
         The host to run the IPC Server on. Defaults to localhost.
@@ -196,7 +196,7 @@ class Server:
                 ):
                     error_response = (
                         "IPC route returned values which are not able to be sent over sockets."
-                        " If you are trying to send a discord.py object,"
+                        " If you are trying to send a disnake object,"
                         " please only send the data you need."
                     )
                     log.error(error_response)

@@ -1,7 +1,7 @@
 Example Usages
 ==============
 
-Here are some ways to use our package in **your own bot!** For github based examples, see `the examples directory <https://github.com/Ext-Creators/discord-ext-ipc/tree/master/examples>`_.
+Here are some ways to use our package in **your own bot!** For github based examples, see `the examples directory <https://github.com/HedTB/disnake-ext-ipc/tree/master/examples>`_.
 
 
 A basic implementation
@@ -12,8 +12,8 @@ The bot file:
 .. code-block:: python
     :linenos:
 
-    import discord
-    from discord.ext import commands, ipc
+    import disnake
+    from disnake.ext import commands, ipc
 
 
     class MyBot(commands.Bot):
@@ -35,7 +35,7 @@ The bot file:
             print(endpoint, "raised", error)
 
 
-    my_bot = MyBot(command_prefix="!", intents=discord.Intents.all())
+    my_bot = MyBot(command_prefix="!", intents=disnake.Intents.all())
 
 
     @my_bot.ipc.route()
@@ -57,7 +57,7 @@ The webserver file:
     :linenos:
 
     from quart import Quart
-    from discord.ext import ipc
+    from disnake.ext import ipc
 
 
     app = Quart(__name__)
@@ -87,8 +87,8 @@ The bot file:
 .. code-block:: python
     :linenos:
 
-    import discord
-    from discord.ext import commands, ipc
+    import disnake
+    from disnake.ext import commands, ipc
 
 
     class MyBot(commands.Bot):
@@ -112,7 +112,7 @@ The bot file:
             print(endpoint, "raised", error)
 
 
-    my_bot = MyBot(command_prefix="!", intents=discord.Intents.all())
+    my_bot = MyBot(command_prefix="!", intents=disnake.Intents.all())
 
 
     if __name__ == "__main__":
@@ -124,7 +124,7 @@ The cog file:
 .. code-block:: python
     :linenos:
 
-    from discord.ext import commands, ipc
+    from disnake.ext import commands, ipc
 
 
     class IpcRoutes(commands.Cog):
@@ -149,7 +149,7 @@ The webserver file:
     :linenos:
 
     from quart import Quart
-    from discord.ext import ipc
+    from disnake.ext import ipc
 
 
     app = Quart(__name__)

@@ -1,7 +1,7 @@
 IPC Errors
 ==========
 
-.. currentmodule:: discord.ext.ipc.errors
+.. currentmodule:: disnake.ext.ipc.errors
 
 .. autoclass:: IPCError
 
