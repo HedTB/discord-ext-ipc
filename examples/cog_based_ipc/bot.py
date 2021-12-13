@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands, ipc
+import disnake
+from disnake.ext import commands, ipc
 
 
 class MyBot(commands.Bot):
@@ -23,7 +23,7 @@ class MyBot(commands.Bot):
         print(endpoint, "raised", error)
 
 
-my_bot = MyBot(command_prefix="!", intents=discord.Intents.all())
+my_bot = MyBot(command_prefix="!", intents=disnake.Intents.all())
 
 
 if __name__ == "__main__":
