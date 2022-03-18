@@ -18,7 +18,7 @@ Installation
 
 .. code-block:: sh
 
-    pip install --upgrade disnake-ext-ipc
+    pip install --upgrade git+git://github.com/HedTB/disnake-ext-ipc
 
 
 See Also
